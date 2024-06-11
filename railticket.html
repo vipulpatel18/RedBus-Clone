@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>RedBus-Train</title>
+</head>
+
+<body>
+    <div class="head-parent train-head-parent">
+        <header class="train-header">
+            <a style="padding-top: 20px;" href="index.html">
+                <img style="filter: none;" src="Img/download.png" alt="" width="72px">
+            </a>
+            <a href="index.html">
+                <div class="train-header-bus">Bus Tickets</div>
+            </a>
+            <a href="railticket.html">
+                <div class="train-header-redrail">redRail</div>
+            </a>
+            <div class="nav-right train-nav-right">
+                <div class="help">
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <span style="color: #fff; font-size: 12px;">Help</span>
+                </div>
+                <div style="width: 60px;" class="account">
+                    <i class="fa-regular fa-user"></i>
+                    <i style="font-size: 16px; margin-left: 3px;" id="down-arrow" class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="train-main-img">
+        <div class="train-home">
+            <a href="index.html">Home</a>> Trains
+        </div>
+        <div class="train-main-img-cont">
+            <div class="train-main-img-box1">
+                <img src="Img/rails_logo_white.svg" alt="" width="88" height="48">
+            </div>
+            <div class="train-main-img-box2">redRail: Train Ticket Booking</div>
+            <div class="train-main-img-box3">Authorised by IRCTC</div>
+        </div>
+        <div class="train-form-container">
+            <div class="train-form-header">
+                <div class="train-form-header-cont">
+                    <p>Book Train tickets</p>
+                    <img src="Img/dot.png" width="20px" height="20px" alt="">
+                </div>
+                <div class="train-form-header-cont">
+                    <p>Check PNR Status</p>
+                    <img src="Img/dot2.png" width="20px" height="20px" alt="">
+                </div>
+                <div class="train-form-header-cont">
+                    <p>Live Train Status</p>
+                    <img src="Img/dot2.png" width="20px" height="20px" alt="">
+                </div>
+            </div>
+            <div class="train-form">
+                <form action="">
+                    <label for="from" class="train-label"><i class="fa-solid fa-bus"></i></label>
+                    <input id="from" class="train-input" type="text" placeholder="From" required>
+                    <div class="swaparrow swaparrow1"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                    <label for="to" class="train-label"> <i class="fa-solid fa-bus"></i></label>
+                    <input id="to" class="train-input" type="text" placeholder="To" required>
+                    <input type="date" name="date" id="date" style="width: 147px; border-right: 1px solid #f0f1f2;">
+                    <div class="checkbox">
+                        <div class="checkbox-cont">
+                            <p>Opt-in for</p>
+                            <h3>Free Cancellation</h3>
+                            <span>₹0 cancellation fee • Instant refund</span>
+                        </div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <button type="submit" id="button">Search Trains</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-main">
+        <h2>Offers for you</h2>
+        <div class="train-main-cont">
+            <div class="train-main-cont-box">
+                <div class="train-main-cont-img">
+                    <img src="Img/Super Safar-80_80.png" width="100" height="100">
+                    <a href="">view details</a>
+                </div>
+                <div class="train-main-cont-text">
+                    <h4>Flat Rs 80 OFF on Train tickets
+                    </h4>
+                    <div>Offer valid till : 31 Jul</div>
+                    <span> SUPERB80</span>
+                </div>
+            </div>
+            <div class="train-main-cont-box">
+                <div class="train-main-cont-img">
+                    <img src="Img/Piggybank.png" width="100" height="100">
+                    <a href="">view details</a>
+                </div>
+                <div class="train-main-cont-text">
+                    <h4 style="width: 160px;">ZERO Convenience FEE
+                    </h4>
+                    <div>Offer valid till : 31 Jul</div>
+                    <span> NOFEE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-authorised">
+        <h2>IRCTC authorised Ticket Booking</h2>
+        <p>Book IRCTC Train Tickets on redRail and enjoy simple & superfast booking process with no service fee + no payment gateway charge.</p>
+        <div class="train-authorised-cont">
+            <div class="train-authorised-cont-box">
+                <div class="train-authorised-img">
+                    <img src="img/partner_v2.svg" width="42" height="67">
+                </div>
+                <div class="train-authorised-text">
+                    <h3>IRCTC Authorised Partner</h3>
+                    <p>Book your train tickets with confidence</p>
+                </div>
+            </div>
+            <div class="train-authorised-cont-box">
+                <div class="train-authorised-img">
+                    <img src="img/refunds_v2.svg" width="42" height="67">
+                </div>
+                <div class="train-authorised-text">
+                    <h3>Instant refunds on UPI payments</h3>
+                    <p>Get Instant Refunds on your UPI payments</p>
+                </div>
+            </div>
+            <div class="train-authorised-cont-box">
+                <div class="train-authorised-img">
+                    <img src="img/support_v2.svg" width="42" height="67">
+                </div>
+                <div class="train-authorised-text">
+                    <h3>Hassle free customer care</h3>
+                    <p>Get dedicated customer support for all your queries</p>
+                </div>
+            </div>
+            <div class="train-authorised-cont-box">
+                <div class="train-authorised-img">
+                    <img src="img/booking_v2.svg" width="42" height="67">
+                </div>
+                <div class="train-authorised-text">
+                    <h3>Fastest confirmed booking experience</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="train-download-app">
+        <h3>Download App</h3>
+        <div class="train-download-app-cont">
+            <div class="train-download-box1">
+                <div class="train-download-list" style="background-color: #3e3e52; color: white;"><span>Step : 1</span> <p>Visit redRail and Choose Journey Date</p></div>
+                <div class="train-download-list"><span>Step : 2</span> <p>Select Class and Look for Available Trains</p></div>
+                <div class="train-download-list"><span>Step : 3</span> <p> Add IRCTC User ID and Passenger Information</p></div>
+                <div class="train-download-list"><span>Step : 4</span> <p>Choose a Method for Payment</p></div>
+                <div class="train-download-list"><span>Step : 5</span> <p>Enter IRCTC Password to Confirm Booking</p></div>
+            </div>
+            <div class="train-download-box2"><img src="Img/mob2_cont.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="question">
+        <div class="question-heading">Frequently Asked Questions</div>
+        <div class="question-cont">
+            <h4>How can I complete an online train ticket booking with redRails?</h4>
+            <p>Booking a train ticket online can be completed with ease in just a few simple steps. If you’re on the
+                app, first click on the “redRails” icon that’s displayed on your screen. Enter the source and
+                destination locations along with the date of travel. Once done, a list of trains operating on your route
+                will be displayed. Select the train and class of your choice, select the boarding and destination
+                stations, enter the details of the passenger and complete the payment. You can download the ticket and
+                the invoice once your payment has been processed.</p>
+        </div>
+        <div class="question-cont">
+            <h4>Do I need to make an account to make an IRCTC train ticket booking online?</h4>
+            <p>Yes, and this has its advantages. This would help expedite the booking process when you have to enter
+                details about the passenger and while completing the payment process.</p>
+        </div>
+        <div class="question-cont">
+            <h4>How is redRails connected to redBus?</h4>
+            <p>redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the
+                bus industry, redBus aims to attain the same success in the train industry as well. A customer can view,
+                book, and complete their payment of train tickets on the redBus app or page by clicking on the
+                “redRails” option that’s provided.</p>
+        </div>
+        <div class="question-cont">
+            <h4>How to cancel a train ticket booked through redRails?</h4>
+            <p>Cancelling an online train ticket booking through redRails can be done as easily as booking a train
+                ticket. When you view the details of your train ticket booking on the app or website, you are presented
+                with the option to either modify your booking or cancel the ticket. Click on the option that best suits
+                your travel needs. A small cancellation fee might be charged based on the timing of your cancellation
+                request.</p>
+        </div>
+        <div class="question-cont">
+            <h4>How do I pay for my online train ticket booking that is made through redRails?</h4>
+            <p>You can complete your online train ticket booking by using any of the variety of payment options that are
+                available at your disposal. Customers can use any amount that’s remaining in their redBus wallet, credit
+                or debit cards, Wallets such as Amazon Pay or through UPI payment gateways such as GooglePay, PhonePe,
+                etc. Payments made online on redRails are safe and secure and eliminate the need to wait in a queue.</p>
+        </div>
+        <div class="question-cont">
+            <h4>Are there any cancellation charges levied when a train ticket is cancelled?</h4>
+            <p>Yes, there are. Depending on when the cancellation was initiated, an amount might get deducted to
+                compensate any losses incurred by IRCTC, Railways, etc. Customers can opt for the “Free Cancellation”
+                policy by paying an extra amount at the time of booking. This comes in handy when travel plans are not
+                concrete.</p>
+        </div>
+        <div class="question-cont">
+            <h4>How many people can I book a seat on a train with a single train ticket booking?</h4>
+            <p>Customers can book a maximum of 6 seats on a single train ticket booking that’s made through redRails.
+            </p>
+        </div>
+        <div class="question-cont">
+            <h4>What are some of the advantages of booking a train ticket with redRails?</h4>
+            <p>One of the key advantages of making an online train ticket booking with redRails is convenience. In the
+                current environment where safety is a priority, customers can view, select, and make their payments
+                online from the comfort of their homes. redRails displays vital information pertaining to their train
+                journey.</p>
+        </div>
+        <div class="question-cont">
+            <h4>Can I check the PNR status of the train on redRails?</h4>
+            <p>Yes, you can. Simply click on the “PNR Status” button that’s available and enter the details requested to
+                view the updated PNR status of the train on your upcoming journey. You can even track the train by
+                clicking on the “Live Train Status” button.</p>
+        </div>
+        <div class="question-cont">
+            <h4>Do I get the option to select my seat or berth on the train?</h4>
+            <p>Yes, you can. While entering the details of the passenger, you can select the berth of your choice. If
+                there are multiple seats booked through one booking, you can select a berth for each passenger
+                individually. You also get the option to make a reservation preference such as booking all berths on one
+                coach, if there are one or two lower berths, and more.</p>
+        </div>
+        <div class="question-cont">
+            <h4>Should I book my train ticket in advance?</h4>
+            <p>It is advisable to complete your online train ticket booking through redRails in advance as this would
+                ensure that you have more choices when it comes to the trains operating on your route as well as ensures
+                that you have more options related to selecting the berth of your choice.</p>
+        </div>
+        <div class="question-cont">
+            <h4>Where can I view the train ticket that I have booked through redRails?</h4>
+            <p>The train ticket will be displayed on the website, app, and will also be available in the registered
+                email that has been used.</p>
+        </div>
+        <div class="question-cont">
+            <h4>Can I book a train ticket through the Tatkal Quota?</h4>
+            <p>Yes, you can though this is quota is subject to seat availability. With the convenience of viewing
+                updated trains and their berth availability, it is advisable to complete your online train ticket
+                booking earlier through redRails.</p>
+        </div>
+        <div class="question-cont">
+            <h4>Are there any offers that can be availed when making an online train ticket booking on redRails?</h4>
+            <p>Yes. redRails offers are provided on a regular basis and the offer details can be found on the redRails
+                homepage or on the app. Enter the offer code at the time of making your payment and avail a discount on
+                your train tickets online.</p>
+        </div>
+        <div class="question-cont">
+            <h4>If I wasn’t able to cancel my train ticket but I ended up missing the train, can I file a TDR through
+                redRails?</h4>
+            <p>Yes, you most certainly can. You can do so on the booking confirmation page. Select the reason for filing
+                a TDR. A GC/EFT certificate might be needed and this can be obtained at the departure station or from
+                the TT.</p>
+        </div>
+    </div>
+
+
+    <footer style="background: #1b2230;">
+        <div class="footer-cont" style="border: none; font-size: 12px;">
+            <div class="footer-cont-box2">
+                <h3 style="color: #7e7e8c;  font-size: 14px;">About redBus</h3>
+                <ul>
+                    <li style="color: #fff; font-size: 12px;"><a href="">About us</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Investor Relations</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Contact us</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Mobile version</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">redBus on mobile</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Sitemap</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Offers</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Careers</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Values</a></li>
+                </ul>
+            </div>
+            <div class="footer-cont-box3">
+                <h3 style="color: #7e7e8c; font-size: 14px;">Info</h3>
+                <ul>
+                    <li style="color: #fff; font-size: 12px;"><a href="">T&C</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Privacy policy</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">FAQ</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Blog</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Bus operator registration</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Agent registration</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Insurance partner</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">User agreement</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Primo Bus</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Bus Timetable</a></li>
+                </ul>
+            </div>
+            <div class="footer-cont-box4">
+                <h3 style="color: #7e7e8c; font-size: 14px;">Global Sites</h3>
+                <ul>
+                    <li style="color: #fff; font-size: 12px;"><a href="">India</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Singapore</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Malaysia</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Indonesia</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Peru</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Colombia</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Cambodia</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Vietnam</a></li>
+                </ul>
+            </div>
+            <div class="footer-cont-box5">
+                <h3 style="color: #7e7e8c; font-size: 14px;">Our Partners</h3>
+                <ul>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Goibibo Bus</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Goibibo Hotels</a></li>
+                    <li style="color: #fff; font-size: 12px;"><a href="">Makemytrip Hotels</a></li>
+                </ul>
+            </div>
+            <div class="footer-cont-box1">
+                <img src="Img/rb_logo.svg" width="65" height="42" alt="">
+                <p style="color: #fff; font-size: 12px;">redBus is the world's largest online bus ticket booking service
+                    trusted by over
+                    25 million happy customers globally. redBus offers bus ticket booking through its website, iOS and
+                    Android mobile apps for all major routes.</p>
+                <div class="footer-bottom-cont" style="color: #fff; font-size: 12px;">Ⓒ 2024 Redbus India Pvt Ltd. All
+                    rights reserved
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
